@@ -22,7 +22,8 @@ export default {
   background-color: antiquewhite;
 }
 .arrow-down {
-  margin: 30px;
+    padding-top: 10px ;
+  margin-top: 30px;
 }
 .arrow-down span {
   display: block;
@@ -31,7 +32,7 @@ export default {
   border-bottom: 5px solid #337ab7;
   border-right: 5px solid #337ab7;
   transform: rotate(180deg);
-  margin: 16px auto;
+  margin: 0px auto;
   animation: arrow-down 2s infinite;
 }
 .arrow-down span:nth-child(2) {
