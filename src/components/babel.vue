@@ -22,7 +22,7 @@ export default {
   background-color: antiquewhite;
 }
 .arrow-down {
-    padding-top: 10px ;
+  padding-top: 10px;
   margin-top: 30px;
 }
 .arrow-down span {

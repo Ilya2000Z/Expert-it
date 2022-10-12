@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <button v-on:click="LoadData">
+      <button id="btn" v-on:click="LoadData">
         <div v-if="!getPreloader">Загрузить данные</div>
         <div v-if="getPreloader" class="loader"></div>
       </button>
@@ -28,6 +28,10 @@ export default {
 </script>
 
 <style>
+.btn_disabled:hover {
+  background-color: rgb(241, 154, 60) !important;
+  cursor: not-allowed;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

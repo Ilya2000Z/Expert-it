@@ -34,6 +34,8 @@ export const moduleStore = {
   actions: {
     //**************Action get data from server*************** */
     LoadData({ commit }) {
+      var button = document.getElementById("btn");
+      button.classList.add("btn_disabled");
       commit("setpreloader", true);
       fetch("https://jsonplaceholder.typicode.com/todos", {
         method: "GET",
@@ -43,6 +45,7 @@ export const moduleStore = {
           // Hear we get data and commit it to state (it usased in this task, instead we can use localStorage, or anything else)
           commit("setData", SortArr(result));
           commit("setpreloader", false);
+          button.classList.remove("btn_disabled");
           router.push("/getdata");
         });
     },
